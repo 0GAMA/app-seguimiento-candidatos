@@ -1,16 +1,100 @@
-# React + Vite
+# Sistema de Seguimiento de Candidatos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introducción
 
-Currently, two official plugins are available:
+Este proyecto es una aplicación web desarrollada para gestionar el seguimiento de candidatos en procesos de selección dentro de una empresa.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ¿Qué es?
 
-## React Compiler
+Es un sistema frontend que permite visualizar, registrar y actualizar la información de candidatos, sus etapas en el proceso de selección y otros datos relevantes.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### ¿Para qué se usa?
 
-## Expanding the ESLint configuration
+Se utiliza para centralizar y organizar el proceso de reclutamiento, facilitando el acceso a la información de los candidatos y mejorando la eficiencia del equipo de recursos humanos.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Stack de Desarrollo
+
+Tecnologías y lenguajes utilizados:
+
+- **React** (v18+): Framework principal para la interfaz de usuario
+- **Vite**: Herramienta de desarrollo rápida para React
+- **HTML5**: Estructura base de la aplicación
+- **JavaScript (ES6+)**: Lógica de programación
+- **CSS Modules / Tailwind**: Estilos y diseño responsivo
+- **JSON Server**: API falsa para simular peticiones backend
+- **Node.js**: Entorno de ejecución para herramientas de desarrollo
+
+---
+
+## Estructura del Proyecto
+
+La aplicación está organizada en las siguientes carpetas principales:
+
+
+src/ ├── api/           # Servicios y llamadas a la API (JSON Server) 
+     ├── components/    # Componentes reutilizables (botones, inputs, etc.) 
+     ├── pages/         # Vistas principales (Dashboard, DetalleCandidato, etc.) 
+     ├── routes/        # Definición de rutas con React Router 
+     ├── helps/         # Funciones utilitarias y helpers 
+     ├── assets/        # Imágenes, íconos y recursos estáticos 
+     ├── App.jsx        # Componente raíz 
+     └── main.jsx       # Punto de entrada de la aplicación
+
+
+## Instalación
+
+Sigue estos pasos para instalar y configurar el proyecto en tu entorno local:
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/seguimiento-candidatos.git
+
+Navegar al directorio del proyecto:
+
+cd seguimiento-candidatos
+
+Instalar las dependencias:
+
+npm install
+
+Configurar la API falsa con JSON Server:
+
+Crear un archivo db.json en la raíz con datos simulados.
+
+Ejecutar JSON Server:
+
+npx json-server --watch db.json --port 3001
+
+Iniciar el servidor de desarrollo:
+
+npm run dev
+
+## Colaboración (Pull Request)
+
+Si deseas colaborar en el proyecto, sigue estos pasos:
+
+Contacta al autor por correo electrónico para coordinar la colaboración.
+
+Haz un fork del repositorio y crea una nueva rama para tus cambios:
+
+git checkout -b feature/nueva-funcionalidad
+
+Realiza tus modificaciones y haz commit:
+
+git commit -m "Agrega nueva funcionalidad"
+
+Sube tus cambios y crea un Pull Request desde GitHub.
+
+En el Pull Request, describe claramente los cambios realizados y su propósito.
+
+Participa en la discusión y ajustes necesarios hasta que se apruebe tu contribución.
+
+## Contacto
+
+Email: trucutrucu@gmail.com
+
+LinkedIn: linkedin.com/in/tintantun
+
+Twitter: @tintantun
